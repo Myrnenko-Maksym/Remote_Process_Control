@@ -1,0 +1,24 @@
+﻿<Window x:Class="RemoteProcessesInformationClient.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RemoteProcessesInformationClient"
+        mc:Ignorable="d"
+        Title="HelpWindow" Height="365" MaxHeight="365" MinHeight="365" Width="705" MinWidth="705" MaxWidth="705">
+    <Grid>
+        <DockPanel></DockPanel>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="95,10,0,0" TextWrapping="Wrap" Text="Добрый день, вы зашли в краткое руководство программой" VerticalAlignment="Top" Height="20" Width="484" FontSize="16" Foreground="#FF2BA92C" FontWeight="Bold"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="20,35,0,0" TextWrapping="Wrap" Text="1) Пожалуйста, убедитесь, что Host был запущен от имени Администратора;" VerticalAlignment="Top" Height="20" Width="493" FontSize="14"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="20,60,0,0" TextWrapping="Wrap" Text="2) Для начала работы введите имя пользователя и затем нажмите кнопку Connect;" VerticalAlignment="Top" Height="20" Width="536" FontSize="14"/>
+        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="20,85,0,0" TextWrapping="Wrap" Text="3) Теперь, по нажатию на кнопку Show Processes вы можете просмотреть список активных процессов;" VerticalAlignment="Top" Height="20" Width="667" FontSize="14"/>
+        <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="20,110,0,0" TextWrapping="Wrap" Text="4) Для просмотра информации о разработчике нажмите кнопку About сверху;" VerticalAlignment="Top" Height="20" Width="511" FontSize="14"/>
+        <TextBlock x:Name="textBlock_Copy4" HorizontalAlignment="Left" Margin="20,135,0,0" TextWrapping="Wrap" Text="5) Для отключения нажмите кнопку Disconnect;" VerticalAlignment="Top" Height="20" Width="309" FontSize="14"/>
+        <TextBlock x:Name="textBlock_Copy5" HorizontalAlignment="Left" Margin="20,160,0,0" TextWrapping="Wrap" Text="6) Для выхода из приложения можете нажать крестик в правом верхнем углу" VerticalAlignment="Top" Height="20" Width="502" FontSize="14"/>
+        <TextBlock x:Name="textBlock_Copy6" HorizontalAlignment="Left" Margin="33,180,0,0" TextWrapping="Wrap" Text="либо зайдя в пункт File -> Close." VerticalAlignment="Top" Height="20" Width="209" FontSize="14"/>
+        <TextBlock x:Name="textBlock_Copy7" HorizontalAlignment="Left" Margin="110,226,0,0" TextWrapping="Wrap" Text="Более подробную информация можно прочитать в отчете в курсовому проекту в разделе Руководство пользователя" VerticalAlignment="Top" Height="52" Width="469" Foreground="#FF2BA92C" FontSize="16" FontWeight="Bold"/>
+        <Button x:Name="button" ToolTip="CLose window" Content="Ok!"  HorizontalAlignment="Left" Margin="297,283,0,0" VerticalAlignment="Top" Width="78" Height="33" FontSize="24" FontWeight="Bold" Click="Button_Click" Background="#FFDDDDDD" Foreground="#FF2BA92C"/>
+
+
+    </Grid>
+</Window>

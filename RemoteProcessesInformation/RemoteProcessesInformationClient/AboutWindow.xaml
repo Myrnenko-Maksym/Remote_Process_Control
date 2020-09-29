@@ -1,0 +1,14 @@
+﻿<Window x:Class="RemoteProcessesInformationClient.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RemoteProcessesInformationClient"
+        mc:Ignorable="d"
+        Title="AboutWindow" Height="146" MinHeight="146" MaxHeight="146" Width="393" MinWidth="393" MaxWidth="393">
+    <Grid Margin="0,0,4,10.2">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="157,25,0,0" TextWrapping="Wrap" Text="Good Day!" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,46,0,0" TextWrapping="Wrap" Text="This program has been created by Myrnenko Maksym, 156H group." VerticalAlignment="Top"/>
+        <Button x:Name="button" ToolTip="Close window" Content="Ok!" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="149,77,0,0" Click="Button_Click"/>
+    </Grid>
+</Window>

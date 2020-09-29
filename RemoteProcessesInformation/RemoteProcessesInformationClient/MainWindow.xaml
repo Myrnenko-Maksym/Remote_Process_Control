@@ -1,0 +1,30 @@
+﻿<Window x:Class="RemoteProcessesInformationClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RemoteProcessesInformationClient"
+        mc:Ignorable="d"
+        Title="Remote_Processes_Information" Height="450" MaxHeight="450" MinHeight="450" Width="800" MaxWidth="800" MinWidth="800" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="49*"/>
+            <ColumnDefinition Width="266*"/>
+            <ColumnDefinition Width="463*"/>
+            <ColumnDefinition Width="15*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="tbUserName" ToolTip="enter user name" HorizontalAlignment="Left" Height="35" Margin="202.2,36,0,0" TextWrapping="Wrap" Text="Input user Name!" VerticalAlignment="Top" Width="533" Grid.ColumnSpan="3" Grid.Column="1"/>
+        <Button Click="ButtonConnection_Click" ToolTip="Click to Connect or disconnect" x:Name="buttonConnection" Content="Connect" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="224" RenderTransformOrigin="-2.275,-2.609" Height="35" Grid.ColumnSpan="2"/>
+        <ListBox x:Name="lbInfo" ToolTip="List of processes" HorizontalAlignment="Left" Height="334" Margin="10,76,0,0" VerticalAlignment="Top" Width="774" Grid.ColumnSpan="4"/>
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="21" Margin="10,10,0,0" VerticalAlignment="Top" Width="774" Grid.ColumnSpan="4">
+            <MenuItem x:Name="FileTab" ToolTip="Click here to look more" Header="File">
+                <MenuItem x:Name="HelpTab" ToolTip="Click to read some features for using this program" Header="Help" Click="HelpTab_Click"></MenuItem>
+                <MenuItem x:Name="CloseTab" ToolTip="Click to close the program" Header="Close" Click="CloseTab_Click"></MenuItem>
+            </MenuItem>
+            <MenuItem x:Name="AboutTab" ToolTip="Click to about creator" Header="About" Click="AboutTab_Click">
+
+            </MenuItem>
+        </Menu>
+
+    </Grid>
+</Window>
